@@ -1,0 +1,7 @@
+# 依赖包列表 (pip freeze > requirements.txt)
+# TODO: Implement logic here
+pandas
+numpy
+streamlit
+matplotlib
+plotly

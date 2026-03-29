@@ -1,0 +1,20 @@
+ecommerce_analysis_project/
+│
+├── .gitignore              # [重要] 告诉GitHub哪些文件不要上传（如大数据文件、缓存）
+├── README.md               # [重要] 项目说明书，面试时直接把这个链接发给HR
+├── requirements.txt        # 依赖包列表 (pip freeze > requirements.txt)
+│
+├── data/                   # [数据层] 存放数据文件
+│   ├── raw_data/           # 存放原始CSV数据 (建议不放GitHub，用.gitignore忽略)
+│   └── processed_data.db   # 生成的SQLite数据库文件
+│
+├── src/                    # [代码层] 核心逻辑代码
+│   ├── __init__.py         # 让Python把这个文件夹当做一个包
+│   ├── data_generator.py   # 模块1：负责“造”模拟数据
+│   ├── db_manager.py       # 模块2：负责连接数据库、建表、存数据 (重点练SQL)
+│   └── analysis.py       # 模块3：核心分析
+│
+├── app.py                  # [应用层] Streamlit网页入口 (你的最终展示界面)
+│
+└── images/                 # [文档层] 存放README里要用的截图
+    └── dashboard_demo.png
