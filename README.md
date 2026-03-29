@@ -42,3 +42,12 @@
 ---
 
 ## 📁 项目结构
+准备环境：pip install -r requirements.txt
+生成数据（实际中可以替换真实数据）
+输入：
+python src/data_data_generator.py
+存入生成的数据
+python src/db_manager.py
+网页可视化
+streamlit run app.py
+
